@@ -1,0 +1,59 @@
+.portfolio {
+	background: #ffdd99;
+	color: #393939;
+}
+
+.portfolio-item-info {
+	margin-top: 2rem;
+	font-size: 1.8rem;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.tabs {
+	margin-bottom: 5rem;
+}
+
+.tab {
+	font-size: 1.8rem;
+	font-weight: 400;
+	text-transform: uppercase;
+	cursor: pointer;
+	padding: 0.5rem 2.5rem;
+	border-radius: 5px;
+	transition: $transition;
+	background: #ebc985;
+
+	&:focus,
+	&:hover,
+	&:active {
+		background: $white;
+	}
+}
+
+.tab-active {
+	background: $white;
+}
+
+.tab-content {
+	display: none;
+	grid-template-columns: 1fr 1fr;
+	gap: 5rem;
+	animation: scaleUp 300ms ease-in-out;
+}
+
+.tab-content-active {
+	display: grid;
+}
+
+@keyframes scaleUp {
+	0% {
+		opacity: 0;
+		transform: scale(0.8);
+	}
+
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}

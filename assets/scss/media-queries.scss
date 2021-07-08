@@ -1,0 +1,103 @@
+@media (max-width: 1200px) {
+	footer,
+	header,
+	section {
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+
+	.grid-col4 {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media (max-width: 768px) {
+	h1 {
+		font-size: 3.2rem;
+	}
+
+	h2 {
+		font-size: 2.4rem;
+	}
+
+	h3 {
+		font-size: 2rem;
+	}
+
+	.header {
+		justify-content: center;
+	}
+
+	.grid-col4,
+	.grid-col2,
+	.tab-content {
+		grid-template-columns: 1fr;
+	}
+
+	.grid-testimonials {
+		gap: 5rem;
+	}
+
+	.footer {
+		gap: 3rem;
+	}
+
+	.testimonial {
+		justify-items: center;
+	}
+}
+
+@media (max-width: 425px) {
+	section {
+		padding-top: 5rem;
+		padding-bottom: 5rem;
+	}
+
+	.content-wrapper {
+		gap: 5rem;
+	}
+
+	.link-nav {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+
+	body,
+	.link-footer,
+	::placeholder,
+	.testimonial-person-quote {
+		font-size: $fontSizeSmall;
+	}
+
+	h1 {
+		font-size: 2.4rem;
+	}
+
+	h2 {
+		font-size: 2rem;
+	}
+
+	h3 {
+		font-size: $fontSizeDefault;
+	}
+
+	button {
+		width: 20rem;
+		font-size: $fontSizeDefault;
+	}
+
+	.header {
+		gap: 3rem;
+	}
+
+	.footer {
+		gap: 1rem;
+	}
+
+	.section-intro,
+	.tab,
+	.portfolio-item-info,
+	.testimonial-person-role {
+		font-size: 1.4rem;
+	}
+}

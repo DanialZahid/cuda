@@ -1,0 +1,30 @@
+// Generic
+
+$font: "Titillium Web", sans-serif;
+$fontSizeDefault: 1.6rem;
+$fontSizeSmall: 1.2rem;
+
+// Colors
+
+$purple: #87509c;
+$orange: #eb7e4c;
+$green: #17c2a4;
+$white: #fff;
+$blue: #3c4761;
+$pink: #d74680;
+$aquaBlue: #30bae7;
+
+// Button State Colors
+
+$buttonAquaBlueHover: hsl(195, 79%, 50%);
+$buttonAquaBlueActive: hsl(195, 79%, 45%);
+
+$buttonGreenHover: hsl(169, 79%, 38%);
+$buttonGreenActive: hsl(169, 79%, 33%);
+
+$buttonOrangeHover: hsl(19, 80%, 56%);
+$buttonOrangeActive: hsl(19, 80%, 51%);
+
+// Miscellaneous
+
+$transition: all 200ms ease-in-out;

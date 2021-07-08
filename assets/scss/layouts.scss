@@ -1,0 +1,141 @@
+// Generic
+
+.content-wrapper {
+	display: flex;
+	flex-flow: column wrap;
+	gap: 8rem;
+	max-width: 1140px;
+	margin: auto;
+}
+
+.section-intro {
+	margin-top: 2rem;
+	font-size: 1.8rem;
+}
+
+.header {
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+.link-nav {
+	text-transform: uppercase;
+	padding: 0.5rem 2rem;
+
+	&:hover {
+		background: #643a79;
+		border-radius: 5px;
+	}
+}
+
+.footer {
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+.link-footer {
+	font-size: 2.4rem;
+	font-weight: 600;
+
+	&:hover {
+		color: $aquaBlue;
+	}
+}
+
+// Grid
+
+.grid-col1 {
+	grid-template-columns: auto;
+}
+
+.grid-col2 {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.grid-col4 {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 5rem;
+}
+
+// Flex
+
+.flex {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+
+// Hero Section
+
+.hero {
+	background: $purple;
+	color: #f7f3ea;
+}
+
+// Contact Section
+
+.contact {
+	background: #3c5499;
+}
+
+.grid-form {
+	gap: 3rem;
+	margin-bottom: 3rem;
+}
+
+// Divider
+
+.divider::after {
+	content: "";
+	display: block;
+	border-bottom: 4px solid rgba(0, 0, 0, 0.2);
+	width: 10rem;
+	margin: 1rem auto auto auto;
+}
+
+// Miscellaneous
+
+.circle {
+	border-radius: 10rem;
+	transition: $transition;
+
+	&:focus,
+	&:hover,
+	&:active {
+		border-radius: 0;
+	}
+}
+
+.rotate {
+	transition: all 500ms ease-in-out;
+
+	&:focus,
+	&:hover,
+	&:active {
+		transform: rotate(360deg);
+	}
+}
+
+.scale-up-10 {
+	transition: $transition;
+
+	&:focus,
+	&:hover,
+	&:active {
+		transform: scale(1.1);
+	}
+}
+
+.scale-up-30 {
+	transition: $transition;
+
+	&:focus,
+	&:hover,
+	&:active {
+		transform: scale(1.3);
+	}
+}

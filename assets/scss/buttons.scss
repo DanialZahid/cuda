@@ -1,0 +1,53 @@
+button {
+	border: 0;
+	color: #fff;
+	font: 600 1.8rem $font;
+	width: 30rem;
+	height: 7rem;
+	text-transform: uppercase;
+	cursor: pointer;
+	border-radius: 5px;
+	box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.2);
+	align-self: center;
+	transition: $transition;
+}
+
+.button-orange {
+	background: $orange;
+
+	&:focus,
+	&:hover {
+		background: $buttonOrangeHover;
+	}
+
+	&:active {
+		background: $buttonOrangeActive;
+	}
+}
+
+.button-aqua-blue {
+	background: $aquaBlue;
+	margin: 3rem auto auto auto;
+
+	&:focus,
+	&:hover {
+		background: $buttonAquaBlueHover;
+	}
+
+	&:active {
+		background: $buttonAquaBlueActive;
+	}
+}
+
+.button-green {
+	background: $green;
+
+	&:focus,
+	&:hover {
+		background: $buttonGreenHover;
+	}
+
+	&:active {
+		background: $buttonGreenActive;
+	}
+}

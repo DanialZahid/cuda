@@ -1,0 +1,24 @@
+.testimonials {
+	background: $pink;
+}
+
+.grid-testimonials {
+	gap: 13rem 10rem;
+	text-align: left;
+}
+
+.testimonial {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	gap: 2rem;
+}
+
+.testimonial-person-quote {
+	font-style: italic;
+	font-size: 2rem;
+}
+
+.testimonial-person-role {
+	font-size: 1.8rem;
+	color: #ffdd99;
+}
