@@ -43,7 +43,7 @@ const modalContent = `
 
 <h2>License</h2>
 
-<p><a title="MIT" href="https://github.com/DanialZahid/Cuda/blob/Main/LICENSE/">MIT</a></p>
+<p><a title="MIT" href="https://github.com/DanialZahid/Cuda/blob/main/LICENSE/">MIT</a></p>
 
 </div>
 </section>
