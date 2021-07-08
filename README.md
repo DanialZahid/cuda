@@ -8,7 +8,7 @@ Cuda is a single page portfolio.
 
 - [On my website](https://cuda.iamdanial.com/)
 - [On GitHub](https://github.com/DanialZahid/Cuda/)
-- [On CodePen](https://codepen.io/danialzahid/)
+- [On CodePen](https://codepen.io/danialzahid/pen/ZEKOeQx/)
 
 ## License
 

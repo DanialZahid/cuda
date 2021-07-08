@@ -30,7 +30,7 @@ const modalContent = `
 <ul>
 	<li><a title="On my website" href="https://cuda.iamdanial.com/">On my website</a></li>
 	<li><a title="On GitHub" href="https://github.com/DanialZahid/Cuda/">On GitHub</a></li>
-	<li><a title="On CodePen" href="https://codepen.io/danialzahid/">On CodePen</a></li>
+	<li><a title="On CodePen" href="https://codepen.io/danialzahid/pen/ZEKOeQx/">On CodePen</a></li>
 </ul>
 
 <h2>External Assets</h2>
