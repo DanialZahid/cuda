@@ -22,41 +22,56 @@ piFloat.setAttribute("title", "See info about this project.");
 piFloat.innerHTML = piFloatContent;
 piBody.append(piFloat);
 
-// Create modal content.
+// Define different information of the project (title, description, etc.) in an object as strings.
+
+const projectInfo = {
+  title: `Cuda — Single Page Portfolio`,
+
+  description: `
+	<p>Cuda is a single page portfolio. A website comprising of several different colored sections, each representing a different kind of information.</p>
+	<p><a title="Design" href="https://graphicburger.com/cuda-single-page-portfolio-template/">Design</a></p>
+	`,
+
+  externalLinks: `
+		<li><a title="On my website" href="https://cuda.iamdanial.com/">On my website</a></li>
+		<li><a title="On GitHub" href="https://github.com/DanialZahid/Cuda/">On GitHub</a></li>
+		<li><a title="On CodePen" href="https://codepen.io/danialzahid/pen/ZEKOeQx/">On CodePen</a></li>
+		`,
+
+  externalAssets: `
+		<li><a title="Unsplash" href="https://unsplash.com/">Unsplash</a> — Some images</li>
+		<li><a title="Michal Burda" href="https://codepen.io/michalburda/pen/KNWqRZ/">Michal Burda</a> — Circle progress bars</li>
+		<li><a title="Accademia di Belle Arti di Urbino" href="https://fonts.google.com/specimen/Titillium+Web/">Accademia di Belle Arti di Urbino</a> — Font</li>`,
+
+  license: `<a title="MIT" href="https://github.com/DanialZahid/Cuda/blob/main/LICENSE/">MIT</a>`,
+};
+
+// Create modal content and add all the project info (from the projectInfo object) with template strings.
 
 const piModalContent = `
 
 <div class="pi-modal">
 
-	<div class="pi-title-bar"><h2>Cuda — Single Page Portfolio</h2>${piIconClose}</div>
+	<div class="pi-title-bar"><h2>${projectInfo.title}</h2>${piIconClose}</div>
 
 	<div class="pi-wrapper">
 
 		<h3>Description</h3>
 
-		<p>Cuda is a single page portfolio. A website comprising of several different colored sections, each representing a different kind of information.</p>
+		${projectInfo.description}
 
-		<p><a title="Design" href="https://graphicburger.com/cuda-single-page-portfolio-template/">Design</a></p>
-
-		<ul>
-			<li><a title="On my website" href="https://cuda.iamdanial.com/">On my website</a></li>
-			<li><a title="On GitHub" href="https://github.com/DanialZahid/Cuda/">On GitHub</a></li>
-			<li><a title="On CodePen" href="https://codepen.io/danialzahid/pen/ZEKOeQx/">On CodePen</a></li>
-		</ul>
+		<ul>${projectInfo.externalLinks}</ul>
 
 		<h3>External Assets</h3>
 
-		<ul>
-			<li><a title="Unsplash" href="https://unsplash.com/">Unsplash</a> — Some images</li>
-			<li><a title="Michal Burda" href="https://codepen.io/michalburda/pen/KNWqRZ/">Michal Burda</a> — Circle progress bars</li>
-			<li><a title="Accademia di Belle Arti di Urbino" href="https://fonts.google.com/specimen/Titillium+Web/">Accademia di Belle Arti di Urbino</a> — Font</li>
-		</ul>
+		<ul>${projectInfo.externalAssets}</ul>
 
 		<h3>License</h3>
 
-		<p><a title="MIT" href="https://github.com/DanialZahid/Cuda/blob/main/LICENSE/">MIT</a></p>
+		<p>${projectInfo.license}</p>
 
 	</div>
+
 </div>
 `;
 
