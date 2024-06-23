@@ -38,7 +38,7 @@ const projectInfo = {
 		<li><a title="View on CodePen" href="https://codepen.io/danialzahid/pen/ZEKOeQx/">View on CodePen</a></li>
 		`,
 
-	license: `<a title="MIT" href="https://github.com/DanialZahid/cuda/blob/main/LICENSE/">MIT</a>`,
+	license: `<a title="MIT" href="https://github.com/DanialZahid/cuda/blob/main/LICENSE">MIT</a>`,
 };
 
 // Create modal content and add all the project info (from the projectInfo object) with template strings.
